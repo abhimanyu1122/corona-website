@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Corona Testing</title>
+  <!-- link stylesheet file -->
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+  <!-- Navigation Bar with menu items -->
+  <div id="navbar">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="form.html">Corona Testing</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Heading on top of the form -->
+  <div class="regform">
+    <h1>Information Form</h1>
+  </div>
+
+  <!-- Main form -->
+  <div class="main">
+    <form id="testForm">
+      <!-- input elements of the form -->
+      <div id="name">
+        <h2 class="name">Name</h2>
+        <input id="firstname" type="text" required name="first_name"><br>
+        <label id="firstlabel"> first name</label>
+         <input id="lastname" type="text" required name="last_name"><br>
+        <label id="lastlabel"> last name</label>
+        
+         
+        <!-- add input and label for last name -->
+
+
+      </div>
+<h2 class="name">email</h2>
+        <input id="email" type="email" required name="email"><br>
+        <h2 class="name"> DOB </h2>
+        <input id="dateofbirth" type="date" required name="DOB"><br>
+        <h2 class="name">MO.number </h2>
+        <input id="mobile" type="text" required name="mobile" pattern="[789][0-9]{9}"><br>
+                <h2 class="name"> profession </h2>
+        <input id="profession" type="text" required name="profession"><br>
+                <h2 class="name"> stat </h2>
+        <select id="state">
+             <option> select one </option> 
+        <option> delhi </option>
+        <option> mumbai </option>
+        <option> chennai </option>
+        <option> up </option>
+        <option> haryana </option>
+        </select><br>
+        <div id="travel">
+         <h2 class="travel"> travel history </h2>
+        <input  type="radio" required name="th" value="yes"> yes<br>
+      <input  type="radio" required name="th" value="no"> no <br>
+      </div>
+      <h2 id="symptoms"> corona symtoms </h2>
+       <div class="arrange">
+         
+        <input  type="checkbox"  name="sym" value="fever"> fever<br>
+      <input  type="checkbox"  name="sym" value="cold"> cold <br>
+      <input  type="checkbox"  name="sym" value="cough"> cough <br>
+      </div>
+      <!-- add more form elements here -->
+
+<input id="submit" type="submit">
+<h1 id="c"></h1>
+    </form>
+  </div>
+
+  <!-- add script files -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase.js"></script>
+  <!-- add script files -->
+   <script src="form.js"></script>
+
+</body>
+
+</html>
